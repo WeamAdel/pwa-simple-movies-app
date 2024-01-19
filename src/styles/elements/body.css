@@ -1,0 +1,5 @@
+body {
+  color: var(--white-900);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--burgundy-900);
+}

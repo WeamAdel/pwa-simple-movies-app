@@ -1,0 +1,26 @@
+.main-navbar {
+	padding-block: 12px;
+	background-color: var(--black-900);
+
+	.main-navbar__link {
+		display: block;
+		color: var(--burgundy-400);
+		font-size: 18px;
+
+		&:visited {
+			color: var(--burgundy-400);
+		}
+
+		&:hover {
+			color: var(--yellow-500);
+		}
+	}
+
+	.main-navbar__list {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+}
