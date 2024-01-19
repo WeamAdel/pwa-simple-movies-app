@@ -4,11 +4,11 @@
 
 	.main-navbar__link {
 		display: block;
-		color: var(--burgundy-400);
+		color: var(--burgundy-100);
 		font-size: 18px;
 
 		&:visited {
-			color: var(--burgundy-400);
+			color: var(--burgundy-100);
 		}
 
 		&:hover {

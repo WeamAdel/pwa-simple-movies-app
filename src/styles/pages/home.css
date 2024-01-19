@@ -8,10 +8,6 @@
 		.header__wrapper {
 			padding-top: 25vh;
 		}
-
-		.header__heading {
-			font-size: clamp(24px, 5vw, 64px);
-		}
 	}
 
 	.movies-list-wrapper {

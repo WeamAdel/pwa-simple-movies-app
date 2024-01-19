@@ -1,0 +1,7 @@
+.main-heading {
+	font-size: clamp(24px, 5vw, 64px);
+}
+
+.section-heading {
+	font-size: clamp(18px, 3.35vw, 48px);
+}
