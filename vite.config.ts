@@ -1,6 +1,11 @@
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default {
+	build: {
+		rollupOptions: {
+			input: ['./index.html', './offline.html', './help.html', './about.html'],
+		},
+	},
 	plugins: [
 		VitePWA({
 			mode: 'development',
