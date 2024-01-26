@@ -8,15 +8,11 @@ export default {
 	},
 	plugins: [
 		VitePWA({
-			mode: 'development',
 			registerType: 'autoUpdate',
 			includeAssets: ['./favicon.ico'],
 			workbox: {
 				navigateFallback: './offline.html',
 				globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg,json}'],
-			},
-			devOptions: {
-				enabled: true,
 			},
 			manifest: {
 				name: 'Movies App',
