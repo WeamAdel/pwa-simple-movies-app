@@ -9,7 +9,7 @@ export default {
 	plugins: [
 		VitePWA({
 			registerType: 'autoUpdate',
-			includeAssets: ['./favicon.ico'],
+			includeAssets: ['./favicon.ico', "./images/error.svg"],
 			workbox: {
 				navigateFallback: './offline.html',
 				globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg,json}'],

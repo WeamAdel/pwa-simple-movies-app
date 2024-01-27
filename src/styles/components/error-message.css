@@ -1,0 +1,16 @@
+.error-message {
+	display: grid;
+	gap: 24px;
+	justify-content: center;
+	text-align: center;
+}
+
+.error-message__img {
+	margin-inline: auto;
+	width: clamp(200px, 30vw, 400px);
+}
+
+.error-message__text {
+	font-weight: bold;
+	font-size: 24px;
+}

@@ -10,7 +10,30 @@
 		}
 	}
 
+	.movies-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		padding-inline-start: 0;
+	}
+
 	.movies-list-wrapper {
 		padding-block: 32px;
+	}
+
+	.movie-card {
+		padding: 20px;
+		border-radius: 10px;
+		border: 1px solid var(--burgundy-700);
+	}
+
+	.movie-card__title {
+		margin-block: 28px 20px;
+	}
+
+	.movie-card__img {
+		border-radius: 5px;
+		width: 100%;
+		height: clamp(200px, 25vw, 300px);
+		object-fit: cover;
 	}
 }

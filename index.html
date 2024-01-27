@@ -39,10 +39,39 @@
 			<section class="movies-list-wrapper">
 				<div class="container">
 					<h2 class="section-heading">Movies List</h2>
-					<ul class="movies-list" id="movies-list"></ul>
+					<div id="movies-list-container">
+						<ul class="movies-list" id="movies-list"></ul>
+					</div>
 				</div>
 			</section>
 		</main>
+
+		<template id="movie-card-template">
+			<li class="movie-card">
+				<img
+					class="movie-card__img"
+					src="https://images.unsplash.com/photo-1517999349371-c43520457b23?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt=""
+				/>
+				<h3 class="movie-card__title">Test Movie</h3>
+				<p class="movie-card__desc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur molestiae
+					nostrum totam, saepe minima qui inventore laudantium doloremque obcaecati iure maiores.
+					Eos porro assumenda facilis inventore labore. Qui, corporis!
+				</p>
+				<p class="movie-card__rating">
+					<span class="movie-card__rating-text">Rating:</span>
+					<span class="movie-card__rating-num">4</span>
+				</p>
+			</li>
+		</template>
+
+		<template id="error-message-template">
+			<div class="error-message">
+				<img class="error-message__img" src="/images/error.svg" alt="" />
+				<p class="error-message__text" role="alert"></p>
+			</div>
+		</template>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
 </html>
