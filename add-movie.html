@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Offline | Movies App</title>
+	</head>
+	<body class="home-page">
+		<nav class="main-navbar">
+			<div class="container">
+				<ul class="main-navbar__list">
+					<li><a class="main-navbar__link" href="/index.html">Home</a></li>
+					<li><a class="main-navbar__link" href="/about.html">About</a></li>
+					<li><a class="main-navbar__link" href="/help.html">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container my-8">
+				<h1 class="main-heading my-8">Add Movie</h1>
+				<form id="add-movie-form" method="POST" action="">
+					<div class="mb-8">
+						<label for="title">Title</label>
+						<input id="title" type="text" name="movieTitle" maxlength="100" required />
+					</div>
+
+					<div class="mb-8">
+						<label for="image">Image URL</label>
+						<input
+							id="image"
+							type="url"
+							name="image"
+							maxlength="100"
+							value=""
+							pattern="https://images.unsplash.com/.*"
+							required
+						/>
+					</div>
+
+					<div class="mb-8">
+						<label for="description">Description</label>
+						<textarea
+							cols="32"
+							rows="12"
+							id="description"
+							type="text"
+							name="description"
+							maxlength="300"
+							required
+						></textarea>
+					</div>
+
+					<div class="mb-8">
+						<label for="rating">rating</label>
+						<input id="rating" type="number" name="rating" max="5" min="1" value="5" required />
+					</div>
+
+					<button class="button button--primary">Submit</button>
+				</form>
+			</div>
+		</main>
+		<script type="module" src="/src/main.ts"></script>
+		<script type="module" src="/src/scripts/add-movie.ts"></script>
+	</body>
+</html>

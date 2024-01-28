@@ -1,0 +1,12 @@
+.button {
+	cursor: pointer;
+  min-width: 140px;
+	padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.button--primary {
+	border: 2px solid var(--burgundy-100);
+	color: var(--burgundy-900);
+	background-color: var(--white-900);
+}
