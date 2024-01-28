@@ -12,6 +12,7 @@
 
 	.movies-list {
 		display: grid;
+		gap: 32px;
 		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 		padding-inline-start: 0;
 	}
@@ -23,7 +24,7 @@
 	.movie-card {
 		padding: 20px;
 		border-radius: 10px;
-		border: 1px solid var(--burgundy-700);
+		border: 1px solid var(--burgundy-800);
 	}
 
 	.movie-card__title {
@@ -35,5 +36,6 @@
 		width: 100%;
 		height: clamp(200px, 25vw, 300px);
 		object-fit: cover;
+		background-color: var(--burgundy-700);
 	}
 }

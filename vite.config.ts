@@ -9,10 +9,26 @@ export default {
 	plugins: [
 		VitePWA({
 			registerType: 'autoUpdate',
-			includeAssets: ['./favicon.ico', "./images/error.svg"],
+			includeAssets: ['./images/error.svg'],
 			workbox: {
 				navigateFallback: './offline.html',
 				globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg,json}'],
+				runtimeCaching: [
+					{
+						urlPattern: ({ url }) => {
+							console.log(url);
+
+							return url.origin.match('https://pwa-simple-movies-app-default-rtdb.firebaseio.com');
+						},
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'api',
+							cacheableResponse: {
+								statuses: [0, 200],
+							},
+						},
+					},
+				],
 			},
 			manifest: {
 				name: 'Movies App',
