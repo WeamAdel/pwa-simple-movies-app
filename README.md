@@ -1,5 +1,9 @@
 # About
-Simple plain JavaScript project using [Vite.js](https://vitejs.dev/guide/) template and [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa).
+Simple plain JavaScript project using [Vite.js](https://vitejs.dev/guide/) template and [vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa) to practice PWA.
+
+## Features
+- Offline support
+- Installable
 
 # How to Run
 
